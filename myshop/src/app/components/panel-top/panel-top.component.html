@@ -1,0 +1,10 @@
+<div>
+    <div style="display: flex;flex-direction: row;">
+        <img src="https://via.placeholder.com/100" alt="">
+        <h2>Sklep z softłerem</h2>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <input type="text" [(ngModel)]="this.mainService.productsRequest.name">
+        <button (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj Produktu</button>
+    </div>
+</div>
