@@ -5,9 +5,9 @@
     <table style="margin:0 auto;" id="productsTable">
         <thead *ngIf="this.mainService.products">
             <tr>
-                <th>obrazek</th>
-                <th>dane</th>
-                <th>akcje</th>
+                <th>Grafika</th>
+                <th>Dane o produkcie</th>
+                <th>Akcja</th>
             </tr>
         </thead>
         <tbody>
@@ -22,7 +22,7 @@
                         </ul>
                     </td>
                     <td>
-                        <button (click)="addToCart(product)">Do koszyka</button>
+                        <button (click)="addToCart(product)" id="button"><b>Do koszyka</b></button>
                     </td>
                 </tr>
             </ng-container>
