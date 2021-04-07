@@ -3,8 +3,42 @@
   height: 25px;
 }
 
+#admin {
+  border-radius: 2px;
+  border: 2px solid #f44336;
+  transition-duration: 0.4s;
+}
+
+#admin:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+
 #cartBtn {
   width: 25px;
   height: 25px;
   text-align: center;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+#baner {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+#szukajka {
+  border-radius: 2px;
+  border: 2px solid #f44336;
+  transition-duration: 0.4s;
+}
+
+#szukajka:hover {
+  background-color: #f44336;
+  color: white;
 }

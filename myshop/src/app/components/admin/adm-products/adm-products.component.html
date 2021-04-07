@@ -2,7 +2,7 @@
     <app-menu></app-menu>
     <div class="content" style="width: 100%;">
         <div class="content-header">
-            <h2>Products</h2>
+            <h2>Produkty</h2>
         </div>
         <button (click)="getProducts()">Odśwież</button>
         <div class="content-container">
@@ -14,9 +14,9 @@
                         </th>
                     </tr>
                     <tr>
-                        <th>link do obrazka</th>
-                        <th>tytuł</th>
-                        <th>cena</th>
+                        <th>Link do grafiki</th>
+                        <th>Nazwa</th>
+                        <th>Cena</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -25,8 +25,8 @@
                         <td><input type="text" [(ngModel)]="newProduct.title"></td>
                         <td><input type="number" [(ngModel)]="newProduct.price"></td>
                         <td><select [(ngModel)]="newProduct.category">
-                          <option value="game">game</option>
-                          <option value="tool">tool</option>
+                          <option value="game">Gra</option>
+                          <option value="tool">Narzędzie</option>
                         </select>
                         </td>
                         <td><button (click)="this.mainService.addProduct(newProduct)">Dodaj</button></td>
@@ -37,9 +37,9 @@
             <table style="margin:0 auto;" id="productsTable">
                 <thead *ngIf="this.mainService.products">
                     <tr>
-                        <th>obrazek</th>
-                        <th>dane</th>
-                        <th>akcje</th>
+                        <th>Grafika</th>
+                        <th>Dane o produkcie</th>
+                        <th>Akcja</th>
                     </tr>
                 </thead>
                 <tbody>

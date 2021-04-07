@@ -1,14 +1,14 @@
 <div>
-    <div style="display: flex;flex-direction: row;">
-        <img src="https://via.placeholder.com/100" routerLink="/landing" alt="">
-        <h2>Sklep z softłerem</h2>
+    <div id="baner">
+        <img src="https://ih1.redbubble.net/image.531944912.8717/flat,1000x1000,075,f.u3.jpg" routerLink="/landing" alt="" id="logo">
+        <h2>Sklepik cudów</h2>
     </div>
 
     <button routerLink="/adm_dashboard" id="admin">Panel Administratora</button>
 
     <div style="display: flex; justify-content: center;">
-        <input type="text" [(ngModel)]="this.mainService.productsRequest.name">
-        <button (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj Produktu</button>
+        <input style ="padding: 10px 12px;margin: 5px 2px;" type="text" [(ngModel)]="this.mainService.productsRequest.name">
+        <button (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products" id="szukajka">Szukaj Produktu</button>
     </div>
     <div>
         <button id="cartBtn" routerLink="/cart">
